@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Crime & DDoS - Oleh rappzxx</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="reveal">
+    <h1><i class="bx bx-shield-quarter"></i> CyberShield</h1>
+    <p>Memahami Bahaya Cyber Crime dan Serangan DDoS</p>
+  </header>
+
+  <section class="hero reveal">
+    <h2>Ancaman Dunia Digital</h2>
+    <p>Kejahatan siber meningkat setiap tahun. Lindungi data dan privasi Anda dengan memahami cara kerja serangan digital.</p>
+  </section>
+
+  <section class="content reveal">
+    <h2><i class="bx bx-bug"></i> Apa Itu Cyber Crime?</h2>
+    <p>Cyber crime adalah kejahatan yang melibatkan komputer dan jaringan. Jenisnya mencakup pencurian data, malware, peretasan, dan lainnya.</p>
+
+    <h3>Jenis-Jenis Cyber Crime:</h3>
+    <ul>
+      <li>🛡️ Phishing – Penipuan dengan menyamar sebagai entitas terpercaya.</li>
+      <li>🔐 Hacking – Akses ilegal ke sistem.</li>
+      <li>💣 Malware – Program jahat untuk merusak atau mencuri.</li>
+      <li>🎭 Identity Theft – Pencurian data pribadi.</li>
+      <li>🌐 DDoS – Membanjiri server agar lumpuh.</li>
+    </ul>
+  </section>
+
+  <section class="ddos reveal">
+    <h2><i class="bx bx-error-circle"></i> Penjelasan DDoS</h2>
+    <p>Serangan DDoS (Distributed Denial of Service) membuat server overload dengan trafik palsu dari ribuan perangkat (botnet).</p>
+
+    <h3>Cara Kerja DDoS:</h3>
+    <ol>
+      <li>Malware menginfeksi banyak perangkat (bot).</li>
+      <li>Bot dikendalikan hacker dari jauh.</li>
+      <li>Bot mengirim trafik berlebihan ke target.</li>
+      <li>Server tidak sanggup menangani dan lumpuh.</li>
+    </ol>
+  </section>
+
+  <section class="tips reveal">
+    <h2><i class="bx bx-lock"></i> Tips Perlindungan</h2>
+    <ul>
+      <li>🧠 Jangan klik link mencurigakan.</li>
+      <li>🔒 Gunakan autentikasi dua faktor.</li>
+      <li>🛡️ Update software dan gunakan antivirus.</li>
+      <li>📱 Gunakan VPN di jaringan publik.</li>
+      <li>🔍 Rutin cek keamanan akun.</li>
+    </ul>
+  </section>
+
+  <footer class="reveal">
+    <p>Website dibuat oleh <strong>rappzxx</strong> • &copy; 2025 CyberShield</p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let el of reveals) {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        if (revealTop < windowHeight - 100) {
+          el.classList.add("active");
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
